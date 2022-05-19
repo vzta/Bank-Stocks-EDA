@@ -42,9 +42,6 @@ for tick in tickers:
     print(tick, bank_stocks[tick]['Close'].max())
 
 
-# In[8]:
-
-
 #using .xs method to do the same task
 bank_stocks.xs(key = 'Close', axis = 1, level = 'Stock Info').max()
 
@@ -55,9 +52,6 @@ for tick in tickers:
 
 
 # ##### Creating a dataframe with everyday returns and plotting them.
-
-# In[13]:
-
 
 sns.pairplot(returns[1:])
 
